@@ -1,0 +1,8 @@
+/* -------------------------- *\
+    Typography:
+\ -------------------------- */
+
+.p {
+    font-size: var(--default-font-size);
+    /*font-size: 1.6rem;*/
+}

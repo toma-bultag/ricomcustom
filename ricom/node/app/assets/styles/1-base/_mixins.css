@@ -1,0 +1,88 @@
+
+/* -------------------------- *\
+    WebFactor Mixins
+\* -------------------------- */
+
+
+/* -------------------------- *\
+    WebFactor Clearfix
+\* -------------------------- */
+
+@define-mixin clearfix {
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+    line-height: 0;
+  }
+}
+
+/* -------------------------- *\
+    WebFactor Media Query
+\* -------------------------- */
+
+@define-mixin min $width {
+  @media (min-width: $(width)px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin max $width {
+  @media (max-width: $(width)px) {
+    @mixin-content;
+  }
+}
+
+/* -------------------------- *\
+    Nav Menu
+\* -------------------------- */
+
+@define-mixin nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+/* -------------------------- *\
+    Transition
+\* -------------------------- */
+
+@define-mixin tra {
+  transition: .3s ease;
+  }
+
+@define-mixin transition $property, $time, $easing {
+  transition: $(property) $(time) $(easing);
+}
+
+/* -------------------------- *\
+    Transition
+\* -------------------------- */
+
+@define-mixin none {
+  display: none;
+}
+
+/* -------------------------- *\
+    Transform Center
+\* -------------------------- */
+
+@define-mixin trce {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+
+/* -------------------------- *\
+    Transform Center
+\* -------------------------- */
+
+@define-mixin awe $icon, $weight {
+  content: '';
+  position: absolute;
+  font-family: "Font Awesome 5 Pro";
+  font-weight: $weight;
+  content: "\$icon";
+}

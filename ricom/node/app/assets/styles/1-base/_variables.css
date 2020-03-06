@@ -1,0 +1,33 @@
+/* -------------------------- *\
+    WebFactor Variables:
+\* -------------------------- */
+
+$border-radius: 0;
+$c1: coral;
+$c2: seagreen;
+$c3: darkslateblue;
+
+/* TEXT PROPERTIES */
+$font-family: 'Roboto', sans-serif;
+$font-weight: 300;
+$default-font-size: 1.6rem;
+$line-height: 1.3;
+
+/* COLORS */
+$text-color: #626262;
+$link-color: #333;
+$link-hover-color: #506fbb;
+
+$colorPrimary: #003880;
+$colorPrimary-light: #4d88ff;
+$colorPrimary-lighter: #b3ccff;
+$colorSecondary: #FFF;
+
+/* NAV VARIABLES */
+$nav-height: 9rem; 
+$nav-sub-text-size: 15px;
+
+$nav-mt-mobile: 1rem;
+$nav-mt-768: 3rem;
+$nav-mt-1000: 5rem;
+$nav-mt-1300: 9rem;

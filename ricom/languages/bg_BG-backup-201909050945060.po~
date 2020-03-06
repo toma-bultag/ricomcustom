@@ -1,0 +1,144 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: symphony_varna\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-22 10:08+0000\n"
+"PO-Revision-Date: 2019-08-22 10:11+0000\n"
+"Last-Translator: root <office@bultag.com>\n"
+"Language-Team: Bulgarian\n"
+"Language: bg_BG\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.2.2; wp-5.2.2"
+
+#. Name of the template
+msgid "Taxonomy"
+msgstr ""
+
+#. Name of the template
+msgid "Index"
+msgstr ""
+
+#. Name of the template
+msgid "Blog"
+msgstr ""
+
+#. Name of the template
+msgid "Home"
+msgstr ""
+
+#. Name of the template
+msgid "Villas"
+msgstr ""
+
+#. Name of the template
+msgid "Post"
+msgstr ""
+
+#. Name of the template
+msgid "Page"
+msgstr ""
+
+#. Name of the template
+msgid "About"
+msgstr ""
+
+#. Name of the template
+msgid "Service"
+msgstr ""
+
+#. Name of the template
+msgid "Test"
+msgstr ""
+
+#. Name of the template
+msgid "About Us"
+msgstr ""
+
+#: template-parts/coastalbulgaria/features.php:3
+msgid " Features"
+msgstr ""
+
+#: template-parts/coastalbulgaria/isotope.php:14
+msgid "Latest"
+msgstr ""
+
+#: template-parts/coastalbulgaria/isotope.php:20
+msgid "Price"
+msgstr "Цена"
+
+#: template-parts/coastalbulgaria/isotope.php:26
+msgid "Size"
+msgstr "Чиста площ"
+
+#: template-parts/coastalbulgaria/isotope.php:32
+msgid "Proximity to Beach"
+msgstr ""
+
+#: template-parts/coastalbulgaria/isotope.php:38
+msgid "Proximity to Airport"
+msgstr ""
+
+#: template-parts/coastalbulgaria/sub/details.php:9
+msgid "bed"
+msgstr "стая"
+
+#: template-parts/coastalbulgaria/sub/details.php:11
+#: template-parts/coastalbulgaria/sub/other.php:47
+msgid " min. to beach"
+msgstr "мин. до плажа"
+
+#: template-parts/coastalbulgaria/sub/details.php:12
+msgid " min. to airport"
+msgstr "мин. до летището"
+
+#: template-parts/coastalbulgaria/sub/property_aside_2.php:4
+#: template-parts/coastalbulgaria/sub/property_aside.php:4
+msgid " Contact us"
+msgstr ""
+
+#: template-parts/coastalbulgaria/sub/property_aside_2.php:15
+#: template-parts/coastalbulgaria/sub/property_aside.php:15
+msgid " Property ID"
+msgstr ""
+
+#: template-parts/coastalbulgaria/sub/property_aside_2.php:19
+#: template-parts/coastalbulgaria/sub/property_aside.php:19
+msgid " Area"
+msgstr "Място"
+
+#: template-parts/coastalbulgaria/sub/property_aside_2.php:49
+#: template-parts/coastalbulgaria/sub/property_aside.php:49
+msgid " Description"
+msgstr ""
+
+#: template-parts/coastalbulgaria/sub/other.php:45
+msgid "beds"
+msgstr "стаи"
+
+#: template-parts/coastalbulgaria/sub/property_aside.php:54
+msgid " Contact"
+msgstr ""
+
+#. Name of the theme
+msgid "CostaBulgaria"
+msgstr ""
+
+#. Description of the theme
+msgid "Mobile First, SEO Friendly custom theme by BULTAG"
+msgstr ""
+
+#. URI of the theme
+msgid "https://bultag.com"
+msgstr ""
+
+#. Author of the theme
+msgid "BULTAG Web Design &amp; SEO"
+msgstr ""
+
+#. Author URI of the theme
+msgid "http://https//bultag.com"
+msgstr ""

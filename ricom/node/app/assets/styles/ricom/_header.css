@@ -1,0 +1,360 @@
+/* -------------------------- *\
+    .header
+\* -------------------------- */
+
+
+.header { 
+	transition: all .3s ease-out;
+	margin-top: $nav-mt-mobile;
+	background-color: transparent;
+	width: 100%;
+	position: absolute;
+	z-index: 15;
+
+	@mixin min 767 {
+		margin-top: $nav-mt-768;
+	}
+
+	@mixin min 1000 {
+		margin-top: $nav-mt-1000;
+	}
+
+	@mixin min 1300 {
+		margin-top: $nav-mt-1300;
+	}
+
+	.shell {
+		background-color: transparent;
+	
+		@mixin min 767 {
+			display: flex;
+			align-items: center;
+			background-color: transparent;
+
+			flex-direction: column;
+		}
+
+		@mixin min 1000 {
+			flex-direction: row;
+		}
+	}
+
+	&__logo {
+		display: inline-block;
+		width: auto;
+		margin-top: 1rem;
+
+			@mixin min 767 {
+				margin: 0;
+				padding: 0;
+				height: auto;
+				width: 30%;
+				display: block;
+				text-align: center;			
+			}
+
+		img {
+			display: block;
+			max-height: 12vh;
+			max-width: 70vw;
+
+				@mixin min 767 {
+					display: block;
+					width: 100%;
+					height: auto;				
+				}
+		}
+	}
+
+
+/* header navigation ICON */
+		
+	@mixin max 767 {
+		&__navIcon {
+			position: relative;
+			margin-top: 1.9rem;
+			transition: all .3s ease-out;
+			display: inline-block;
+			
+			&,
+			&::before,
+			&::after {
+				width: 2.5rem;
+				height: 2px;
+				background-color: $colorPrimary;
+				display: inline-block;	
+			}
+
+			&::before,
+			&::after {
+				content: "";
+				position: absolute;
+				left: 0;
+				transition: all .3s ease-out;
+
+			}
+
+			&::before {top: -.6rem;}
+			&::after {top: .6rem;}
+		}
+
+		&__navCheckbox:checked + &__navButton &__navIcon {
+			background-color: transparent;
+					
+			&::before {
+				top: 3px;
+				transform: rotate(35deg) translate(-2px,-1rem);
+				transform-origin: top left;
+				width: 2.3rem;
+			}
+			&::after {
+				top: -3px;
+				transform: rotate(-35deg) translate(-2px,1rem);
+				transform-origin: bottom left;
+				width: 2.3rem;
+			}
+		}
+	}
+/* header navigation start */
+
+		&__navCheckbox {
+			display: none;
+		}
+
+	@mixin max 768 {
+			&__navButton {
+				height: 4rem;
+				width: 4rem;
+				border-radius: 50%;
+				background-color: orange;
+				position: fixed;
+				top: 2rem;
+				right: 2.5rem;
+				box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+				text-align: center;		
+				cursor: pointer;
+				user-select: none;
+			}		
+		
+		&__nav {
+			background-color: $colorPrimary;
+			height: 80vh;
+			width: 30rem;
+			position: fixed;
+			bottom: 5vh;
+			right: 0;
+	 	 	overflow: auto;
+	  		white-space: nowrap;
+	  		opacity: 0;
+	  		width: 0;
+	  		transition: all .3s ease-out;
+		}
+
+		&__nav ul {
+			list-style: none;
+			font-size: 1.7rem;
+			text-align: left;
+			padding: 0;
+			margin: 0;
+		}
+
+		&__nav li {
+			margin: 1rem;
+			position: relative;
+			border-bottom: 1px solid $colorPrimary-light;
+
+			span {
+				color: $colorPrimary-light;
+				display: inline-block;
+				transform: scale(1.5);
+			}
+		}
+
+		&__nav a {
+			color: $colorSecondary;		
+
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 1.5rem 2rem;
+			width: auto;
+			text-align: left;
+			position: relative;
+			width: 80%;
+
+			&:active {
+				border-bottom: 2px solid $colorPrimary;
+			}
+		}
+
+		.sub-menu {
+			background-color: $colorPrimary;
+			height: 80vh;
+			width: 30rem;
+			position: fixed;
+			bottom: 5vh;
+			right: 0;
+	 	 	overflow: auto;
+	  		white-space: nowrap;
+	  		opacity: 0;
+	  		width: 0;
+	  		transition: all .3s ease-out;
+	  		z-index: 0;
+			display: inline-block;
+
+		}
+	/* header navigation functionality */
+
+		&__navCheckbox:checked ~ &__nav {
+			opacity: 1;
+			width: 30rem;
+		}
+
+		.opened {
+			opacity: 1;
+			width: 30rem;
+			z-index: 10;
+		}
+	} /* responsive navigation up to 768px */
+/* Responsive above 768px */
+
+	@mixin min 768 {
+		&__navButton,
+		&__navIcon {
+			display: none;
+		}
+	}
+
+	@mixin min 768 {
+	
+		&__nav {
+			background-color: transparent;
+			height: $nav-height;
+			width: 800px;
+			
+			@mixin min 1000 {
+			align-self: stretch;
+
+			}
+
+			ul {
+				height: 100%;
+				margin: 0;
+				padding: 0 2rem;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;	
+
+				@mixin min 1000{
+					padding-right: 0;
+				}			
+			}
+
+			li {
+				position: relative;
+				color: $colorSecondary;
+			
+				span {
+					display: none;
+				}				
+			}
+
+			a {	
+				color: $colorPrimary;
+				text-transform: uppercase;
+				font-weight: 700;	
+			}
+
+		}
+
+		.menu-item-has-children ul {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: nowrap;
+
+			position: absolute;
+			top: 100%;
+			left: 0;
+			margin: 0;
+			padding: 0;
+			background-color: $colorPrimary;
+			opacity: 0;
+			visibility: hidden;
+			z-index: 5;
+			transform: translateY(0);
+			transition: all .2s ease-out;
+
+			li:first-child {
+				display: none;
+			}
+
+			li:last-child {
+				padding-bottom: 2rem;
+			}
+		
+			a {
+				color: $colorPrimary-lighter;
+				display: inline-block;
+				text-transform: capitalize;
+				transform: translateX(0rem);
+				transition: all .2s ease-out;
+
+				&:hover {
+					transform: translateX(1rem);
+					color: $colorSecondary;
+				}		
+			}
+
+			li {
+				background-color: $colorPrimary;
+				z-index: 10;
+				margin: 0;
+				padding: 1rem 2.5rem 1rem 2.5rem;
+				width: 24rem;
+				line-height: 1.7rem;
+				font-size: $nav-sub-text-size;
+				white-space: nowrap;
+				box-sizing: border-box;
+			}
+
+			li.menu-item-has-children ul {				
+				position: absolute;
+				top:0;
+				left: -100%;
+				opacity: 0;
+				display: none;
+
+				@mixin min 1520 {
+					left: 100%;
+				}
+			}
+
+			li.menu-item-has-children:hover ul {
+				opacity: 1;
+				display: block;
+			}			
+		}
+
+		.menu-item-has-children:hover ul {
+			opacity: 1;
+			visibility: visible;
+			z-index: 5;
+		}
+	} /* min 768 nav */
+} /* header */
+
+.noDisplay {
+	display: none;
+}
+
+.disappeared {
+	margin-top: 0;
+	top: 0;
+	transform: translateY(-10rem);
+}
+
+.stickyHeader {
+	background-color: #99A8BB;
+	position: fixed;
+	transform: translateY(0rem);	
+}

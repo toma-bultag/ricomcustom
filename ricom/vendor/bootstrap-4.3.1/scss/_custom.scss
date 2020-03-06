@@ -1,0 +1,28 @@
+// Change default bootstrap variables
+
+// Grid containers
+$container-max-widths: (
+  xl: 1630px
+);
+
+// Colors
+$light: #dad9d8;
+$dark: #383838;
+$blue: #003c6a;
+$info: #4fc6d8;
+$green: #a3c9b0;
+$yellow: #ffe700;
+$red: #820024;
+
+// Typography
+$headings-font-family: 'Open Sans Condensed Bold', 'Helvetica', sans-serif;
+
+// Components
+$border-radius: 0;
+$border-radius-sm: 0;
+$border-radius-lg: 0;
+
+//
+$input-btn-focus-box-shadow: none;
+$input-focus-border-color: inherit;
+

@@ -1,0 +1,190 @@
+/* -------------------------- *\
+    .intro
+\* -------------------------- */
+
+.intro { 
+	padding: 0;
+	min-height: 90vh;
+
+	img {
+		display: block;
+		height: 90vh;
+		width: auto;
+		object-fit: cover;
+
+		@mixin min 767 {
+			height: 90vh;
+			width: 100%;
+		}
+	}
+
+	background-color: palevioletred;
+	color: $colorPrimary;
+	font-size: 2rem;
+	line-height: 2;
+
+	h1 {
+		margin: 0;
+		z-index: 10;
+	}
+ }
+
+ .section_2 {
+ 	padding: 0;
+	background-color: seagreen;
+ }
+
+ .section_3 {
+
+ }
+
+ .section_4 {
+ 	color: purple;
+ 	background-color: grey;
+ }
+
+.introContent {
+	position: absolute;
+	top: $nav-height;
+	left: 0;
+	padding: 1.5rem;
+	height: auto;
+
+	@mixin min 768 {
+		top: calc($nav-height + 10rem);
+		
+		display: flex;
+	}
+
+	&__text {
+		width: 66%;
+
+		@mixin min 768 {
+			padding-right: 10%;
+		}
+	}
+
+	&__text div {
+		display: none;
+
+		@mixin min 768 {
+			display: block;
+		}
+	}
+
+	&__form {
+		background-color: tan;
+		padding: 2rem;
+		height: 63rem;
+
+		@mixin min 768 {
+			width: 33%;
+		}
+
+		option {
+		}
+	}
+
+	&__form > * {
+		background-color: green;
+		display: block;
+		width: 100%;
+	}
+
+}
+
+/* SELECT2 SYLES */
+
+
+form.introContent__form {
+	.select2-selection {
+		background-color: royalblue !important;
+		border: none !important;
+		border-radius: 0;
+		color: orange !important;
+	}
+
+	.select2-container.select2-container--default.select2-container--open {
+	background-color: purple !important;
+
+		span.select2-dropdown {
+					background-color: red !important;
+			
+			span.select2-results {
+					background-color: red !important;
+
+				ul.select2-results__options {
+					background-color: red !important;
+
+					li.select2-results__option {
+						background-color: yellow;
+					}
+				}
+			}
+		}
+	}
+
+	.select2-container{
+		background-color: brown !important;
+	}
+
+	.select2-container--default {
+		background-color: yellow !important;
+	}
+
+	.select2-dropdown {
+	background-color: orangered !important;
+	}
+
+	.select2-results {
+	background-color: yellow !important;
+	color: red;
+	}
+
+	.select2-results__option {
+	background-color: pink !important;
+	}
+
+	.select2-results__options {
+	background-color: pink !important;
+	}
+
+	.select2-container--default .select2-results__option--highlighted {
+		background-color: orange !important;
+	}
+
+	.select2-selection__rendered {
+	background-color: transparent;
+
+		li.select2-selection__choice {
+			color: red;
+			background-color: purple;
+			border: none;
+
+			span {
+				display: none;
+			}
+		}
+	}
+
+	.select2-container--default {
+	background-color: transparent !important;
+	}
+
+	.select2-selection--multiple {
+	border: none;
+	}
+
+	.select2-container--default .select2-results > .select2-results__options {
+		background-color: red !important;
+	}
+}
+/*
+centrirane
+
+top: 50%;
+left: 50%;
+min-width: 100%;
+min-height: 100%;
+overflow: hidden;
+*/

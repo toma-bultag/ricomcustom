@@ -1,0 +1,10 @@
+import waypoint from './modules/waypoint';
+// import isotope from './modules/isotope.pkgd.min';
+import waypoint2 from './modules/jquery.waypoints.min';
+// import custom from './modules/custom';
+// import header from './modules/header';
+// import smoothscroll from './modules/smoothscroll';
+// import magnific from './modules/magnific';
+import navigation from './modules/navigation';
+import searchForm from './modules/searchForm';
+import myStickyHeader from './modules/MyStickyHeader';
